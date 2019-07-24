@@ -1,0 +1,20 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "Learning TypeScript by making a Blockchan with it",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeonghoheo/typechain.git"
+  },
+  "author": "Jeongho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeonghoheo/typechain/issues"
+  },
+  "homepage": "https://github.com/jeonghoheo/typechain#readme",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
