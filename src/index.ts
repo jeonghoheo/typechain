@@ -1,14 +1,15 @@
-interface Human {
-  name: string;
-  age: number;
-  gender: string;
+class Human {
+  public name: string;
+  private age: number;
+  public gender: string;
+  constructor(name: string, age: number, gender?: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
 }
 
-const person = {
-  name: "Jeongho",
-  age: 123,
-  gender: "male"
-};
+const choco = new Human("Jeongho", 22);
 
 const sayHi = (person: Human): string => {
   return `Hello ${person.name}, you are a ${person.age}, you are a ${
@@ -16,6 +17,6 @@ const sayHi = (person: Human): string => {
   }`;
 };
 
-console.log(sayHi(person));
+console.log(sayHi(choco));
 
 export = {};
